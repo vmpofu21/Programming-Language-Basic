@@ -1,0 +1,20 @@
+#lang basic-vm
+10 input n rem asks the user to input a number
+20 if n < 0 then goto 100
+30 let a = 0
+40 let b = 1
+50 print "Fibonacci sequence:"
+60 if n = 1 then print a
+70 if n > 1 then print a : print b
+80 let count = 2
+90 if count > n then goto 200
+100 let next = a + b
+110 print next
+120 let a = b
+130 let b = next
+140 let count = count + 1
+150 goto 90
+200 print "End of sequence."
+210 end
+
+

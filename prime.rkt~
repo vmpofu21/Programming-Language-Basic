@@ -1,0 +1,16 @@
+#lang basic-vm
+
+10 input n
+20 if n < 2 then goto 100
+30 let i = 2
+40 if i * i > n then goto 90
+50 if n mod i = 0 then goto 100
+60 let i = i + 1
+70 goto 40
+90 print "prime"
+95 end
+100 print "not prime"
+110 end
+
+
+
